@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Materials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,144,1) 26%, rgba(0,154,233,1) 81%);           
+            font-family: Arial, sans-serif;
+        }       
+        h1{
+    		color: #ffffff; /* Màu xanh dương */
+   			font-size: 36px; /* Kích thước chữ */
+   		    margin-bottom: 40px; /* Khoảng cách dưới tiêu đề */   }  
+   		    
+   		        
+        .tabs {
+            display: flex;
+            flex-wrap: wrap; /* Cho phép các tab xuống dòng nếu vượt quá */
+            justify-content: center; /* Canh giữa các tab */
+            max-width: 850px; /* Giới hạn chiều rộng của tất cả các tab */
+        }
+        .tab {
+            flex-basis: 30%; /* Mỗi tab chiếm khoảng 24% chiều rộng */
+            max-width: 200px; /* Giới hạn chiều rộng của tab */
+            height: 200px;
+           
+            margin: 10px; /* Khoảng cách giữa các tab */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .tab:hover {
+            background-color: #98c1d9 ;
+            transform: translateY(-5px); /* Hiệu ứng nâng khi hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Tăng độ sâu của bóng đổ */
+        }
+        .tab .icon {
+        	margin-bottom: 40px;
+            font-size: 40px;
+  			color: #ffffff;
+        }
+        .tab button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none; 
+            background-color: #01194C;
+            cursor: pointer;
+          	font-size: 16px;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        .tab button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+<h1>Available Materials</h1>
+    <div class="tabs">
+        <div class="tab">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            Cấu Trúc Dữ liệu
+            <button>View Materials</button>
+        </div>
+        <div class="tab">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            Toán A1
+            <button>View Materials</button>
+        </div>
+        <div class="tab">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            Java OOP
+            <button>View Materials</button>
+        </div>
+        <div class="tab">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            Cấu Trúc Máy Tính
+            <button>View Materials</button>
+        </div>
+        <div class="tab">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            Toán Rời Rạc
+            <button>View Materials</button>
+        </div>
+        <div class="tab">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            Giao Tiếp Người - Máy
+            <button>View Materials</button>
+        </div>
+    </div>
+</body>
+</html>
